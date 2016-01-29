@@ -76,7 +76,7 @@ const data = [
   },
   {
     sorting: '本学部専門科目 選択必修科目',
-    subject: '各講座開講の「概論',
+    subject: '各講座開講の「概論｣',
     requiredCredits: 4,
   },
   {
