@@ -1,4 +1,8 @@
 {
+  "name": "credits-cheking",
+  "version": "0.0.1",
+  "description": "Credits cheking app using React + material-ui.",
+  "author": "Masato Urai @uraway_",
   "devDependencies": {
     "autoprefixer": "^6.0.3",
     "babel": "^5.8.29",
@@ -69,5 +73,7 @@
     "request": "^2.69.0",
     "serve-favicon": "~2.3.0",
     "socialbuttons": "0.0.2"
-  }
+  },
+  "homepage": "https://github.com/uraway/CreditChecking",
+  "bugs": "https://github.com/uraway/CreditChecking/issues"
 }
