@@ -40,6 +40,8 @@ export default class App extends Component {
    }
 
    render() {
+     const url = "https://creditchecking.firebaseapp.com";
+
      return (
        <div>
          <p><a className="Navigation-link" href="https://kym.kobe-u.ac.jp/kobe-u/campus" target="_blank">うりぼーネット</a>で修得単位を確認する</p>
@@ -96,7 +98,8 @@ export default class App extends Component {
              </TableRow>
            </TableFooter>
          </Table>
-         <FacebookLikeButton /><TwitterButton />
+         <FacebookLikeButton url={url} />
+         <TwitterButton url={url} />
        </div>
      );
    }

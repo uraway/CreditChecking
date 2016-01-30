@@ -5,7 +5,6 @@
  */
 
 import React, { Component } from 'react';
-import IconButton from 'material-ui/lib/icon-button';
 import FlatButton from 'material-ui/lib/flat-button';
 import FontIcon from 'material-ui/lib/font-icon';
 
