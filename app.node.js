@@ -65,17 +65,17 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  var _reactDom = __webpack_require__(32);
+  var _reactDom = __webpack_require__(38);
 
   var _reactDom2 = _interopRequireDefault(_reactDom);
 
-  var _fbjsLibExecutionEnvironment = __webpack_require__(5);
+  var _fbjsLibExecutionEnvironment = __webpack_require__(6);
 
   var _coreLocation = __webpack_require__(4);
 
   var _coreLocation2 = _interopRequireDefault(_coreLocation);
 
-  var _componentsLayout = __webpack_require__(7);
+  var _componentsLayout = __webpack_require__(8);
 
   var _componentsLayout2 = _interopRequireDefault(_componentsLayout);
 
@@ -86,18 +86,12 @@ module.exports =
       return __webpack_require__(11);
     }, '/about': function about() {
       return __webpack_require__(12);
-    }, '/blog/kobeKokubun': function blogKobeKokubun() {
-      return __webpack_require__(13);
-    }, '/blog/test-article-one': function blogTestArticleOne() {
-      return __webpack_require__(14);
-    }, '/blog/test-article-two': function blogTestArticleTwo() {
-      return __webpack_require__(15);
-    }, '/check/test-article-one': function checkTestArticleOne() {
-      return __webpack_require__(16);
-    }, '/check/test-article-two': function checkTestArticleTwo() {
-      return __webpack_require__(17);
     }, '/': function _() {
-      return __webpack_require__(18);
+      return __webpack_require__(13);
+    }, '/uni/kokubun': function uniKokubun() {
+      return __webpack_require__(5);
+    }, '/uni/kokubun': function uniKokubun() {
+      return __webpack_require__(14);
     } }; // Auto-generated on build. See tools/lib/routes-loader.js
 
   var route = function route(path, callback) {
@@ -258,7 +252,7 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  __webpack_require__(20);
+  __webpack_require__(16);
 
   var _coreLocation = __webpack_require__(4);
 
@@ -357,17 +351,17 @@ module.exports =
 
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-  var _fbjsLibExecutionEnvironment = __webpack_require__(5);
+  var _fbjsLibExecutionEnvironment = __webpack_require__(6);
 
-  var _historyLibCreateBrowserHistory = __webpack_require__(22);
+  var _historyLibCreateBrowserHistory = __webpack_require__(18);
 
   var _historyLibCreateBrowserHistory2 = _interopRequireDefault(_historyLibCreateBrowserHistory);
 
-  var _historyLibCreateMemoryHistory = __webpack_require__(23);
+  var _historyLibCreateMemoryHistory = __webpack_require__(19);
 
   var _historyLibCreateMemoryHistory2 = _interopRequireDefault(_historyLibCreateMemoryHistory);
 
-  var _historyLibUseQueries = __webpack_require__(24);
+  var _historyLibUseQueries = __webpack_require__(20);
 
   var _historyLibUseQueries2 = _interopRequireDefault(_historyLibUseQueries);
 
@@ -378,133 +372,6 @@ module.exports =
 
 /***/ },
 /* 5 */
-/***/ function(module, exports) {
-
-  module.exports = require("fbjs/lib/ExecutionEnvironment");
-
-/***/ },
-/* 6 */
-/***/ function(module, exports) {
-
-  module.exports = require("react-social");
-
-/***/ },
-/* 7 */
-/***/ function(module, exports, __webpack_require__) {
-
-  /**
-   * React Static Boilerplate
-   * https://github.com/koistya/react-static-boilerplate
-   * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
-   */
-
-  'use strict';
-
-  Object.defineProperty(exports, '__esModule', {
-    value: true
-  });
-
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-  var _react = __webpack_require__(1);
-
-  var _react2 = _interopRequireDefault(_react);
-
-  __webpack_require__(19);
-
-  var _Navigation = __webpack_require__(8);
-
-  var _Navigation2 = _interopRequireDefault(_Navigation);
-
-  function Layout(_ref) {
-    var children = _ref.children;
-
-    return _react2['default'].createElement(
-      'div',
-      { className: 'Layout' },
-      _react2['default'].createElement(_Navigation2['default'], null),
-      children
-    );
-  }
-
-  Layout.propTypes = {
-    children: _react.PropTypes.element.isRequired
-  };
-
-  exports['default'] = Layout;
-  module.exports = exports['default'];
-
-/***/ },
-/* 8 */
-/***/ function(module, exports, __webpack_require__) {
-
-  /**
-   * React Static Boilerplate
-   * https://github.com/koistya/react-static-boilerplate
-   * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
-   */
-
-  'use strict';
-
-  Object.defineProperty(exports, '__esModule', {
-    value: true
-  });
-
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-  var _react = __webpack_require__(1);
-
-  var _react2 = _interopRequireDefault(_react);
-
-  __webpack_require__(21);
-
-  var _Link = __webpack_require__(3);
-
-  var _Link2 = _interopRequireDefault(_Link);
-
-  function Navigation() {
-    return _react2['default'].createElement(
-      'div',
-      null,
-      _react2['default'].createElement(
-        'h2',
-        { className: 'Navigation' },
-        _react2['default'].createElement(
-          'a',
-          { className: 'Navigation-link', href: '/' },
-          '単位チェッカー beta'
-        )
-      ),
-      _react2['default'].createElement(
-        'ul',
-        { className: 'Navigation', role: 'menu' },
-        _react2['default'].createElement(
-          'li',
-          { className: 'Navigation-item' },
-          _react2['default'].createElement(
-            'a',
-            { className: 'Navigation-link', href: '/', onClick: _Link2['default'].handleClick },
-            'Home'
-          )
-        ),
-        _react2['default'].createElement(
-          'li',
-          { className: 'Navigation-item' },
-          _react2['default'].createElement(
-            'a',
-            { className: 'Navigation-link', href: '/about', onClick: _Link2['default'].handleClick },
-            'About'
-          )
-        )
-      )
-    );
-  }
-
-  exports['default'] = Navigation;
-  module.exports = exports['default'];
-
-/***/ },
-/* 9 */
 /***/ function(module, exports) {
 
   'use strict';
@@ -603,6 +470,159 @@ module.exports =
   }];
 
   exports['default'] = data;
+  module.exports = exports['default'];
+
+/***/ },
+/* 6 */
+/***/ function(module, exports) {
+
+  module.exports = require("fbjs/lib/ExecutionEnvironment");
+
+/***/ },
+/* 7 */
+/***/ function(module, exports) {
+
+  module.exports = require("react-social-buttons");
+
+/***/ },
+/* 8 */
+/***/ function(module, exports, __webpack_require__) {
+
+  /**
+   * React Static Boilerplate
+   * https://github.com/koistya/react-static-boilerplate
+   * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
+   */
+
+  'use strict';
+
+  Object.defineProperty(exports, '__esModule', {
+    value: true
+  });
+
+  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+  var _react = __webpack_require__(1);
+
+  var _react2 = _interopRequireDefault(_react);
+
+  __webpack_require__(15);
+
+  var _Navigation = __webpack_require__(9);
+
+  var _Navigation2 = _interopRequireDefault(_Navigation);
+
+  function Layout(_ref) {
+    var children = _ref.children;
+
+    return _react2['default'].createElement(
+      'div',
+      { className: 'Layout' },
+      _react2['default'].createElement(_Navigation2['default'], null),
+      children
+    );
+  }
+
+  Layout.propTypes = {
+    children: _react.PropTypes.element.isRequired
+  };
+
+  exports['default'] = Layout;
+  module.exports = exports['default'];
+
+/***/ },
+/* 9 */
+/***/ function(module, exports, __webpack_require__) {
+
+  /**
+   * React Static Boilerplate
+   * https://github.com/koistya/react-static-boilerplate
+   * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
+   */
+
+  'use strict';
+
+  Object.defineProperty(exports, '__esModule', {
+    value: true
+  });
+
+  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+  var _react = __webpack_require__(1);
+
+  var _react2 = _interopRequireDefault(_react);
+
+  __webpack_require__(17);
+
+  var _Link = __webpack_require__(3);
+
+  var _Link2 = _interopRequireDefault(_Link);
+
+  var _materialUiLibAppBar = __webpack_require__(21);
+
+  var _materialUiLibAppBar2 = _interopRequireDefault(_materialUiLibAppBar);
+
+  var _materialUiLibIconButton = __webpack_require__(24);
+
+  var _materialUiLibIconButton2 = _interopRequireDefault(_materialUiLibIconButton);
+
+  var _materialUiLibSvgIconsNavigationClose = __webpack_require__(29);
+
+  var _materialUiLibSvgIconsNavigationClose2 = _interopRequireDefault(_materialUiLibSvgIconsNavigationClose);
+
+  var _materialUiLibMenusIconMenu = __webpack_require__(27);
+
+  var _materialUiLibMenusIconMenu2 = _interopRequireDefault(_materialUiLibMenusIconMenu);
+
+  var _materialUiLibSvgIconsNavigationMoreVert = __webpack_require__(30);
+
+  var _materialUiLibSvgIconsNavigationMoreVert2 = _interopRequireDefault(_materialUiLibSvgIconsNavigationMoreVert);
+
+  var _materialUiLibMenusMenuItem = __webpack_require__(28);
+
+  var _materialUiLibMenusMenuItem2 = _interopRequireDefault(_materialUiLibMenusMenuItem);
+
+  var _reactTapEventPlugin = __webpack_require__(39);
+
+  var _reactTapEventPlugin2 = _interopRequireDefault(_reactTapEventPlugin);
+
+  // Needed for onTouchTap
+  // Can go away when react 1.0 release
+  // Check this repo:
+  // https://github.com/zilverline/react-tap-event-plugin
+  (0, _reactTapEventPlugin2['default'])();
+
+  function Navigation() {
+    return _react2['default'].createElement(
+      'div',
+      null,
+      _react2['default'].createElement(_materialUiLibAppBar2['default'], {
+        title: '単位チェッカー β',
+        iconElementLeft: _react2['default'].createElement(
+          _materialUiLibIconButton2['default'],
+          null,
+          _react2['default'].createElement(_materialUiLibSvgIconsNavigationClose2['default'], null)
+        ),
+        iconElementRight: _react2['default'].createElement(
+          _materialUiLibMenusIconMenu2['default'],
+          {
+            iconButtonElement: _react2['default'].createElement(
+              _materialUiLibIconButton2['default'],
+              null,
+              _react2['default'].createElement(_materialUiLibSvgIconsNavigationMoreVert2['default'], null)
+            ),
+            targetOrigin: { horizontal: 'right', vertical: 'top' },
+            anchorOrigin: { horizontal: 'right', vertical: 'top' }
+          },
+          _react2['default'].createElement(_materialUiLibMenusMenuItem2['default'], { href: '/', primaryText: 'Home' }),
+          _react2['default'].createElement(_materialUiLibMenusMenuItem2['default'], { href: '/about', primaryText: 'About' }),
+          _react2['default'].createElement(_materialUiLibMenusMenuItem2['default'], { href: 'http://uraway.hatenablog.com/entry/2016/01/29/213008', primaryText: 'Website' })
+        )
+      })
+    );
+  }
+
+  exports['default'] = Navigation;
   module.exports = exports['default'];
 
 /***/ },
@@ -771,9 +791,15 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  var _reactSocial = __webpack_require__(6);
+  var _materialUiLibFlatButton = __webpack_require__(22);
 
-  var _reactSocial2 = _interopRequireDefault(_reactSocial);
+  var _materialUiLibFlatButton2 = _interopRequireDefault(_materialUiLibFlatButton);
+
+  var _materialUiLibFontIcon = __webpack_require__(23);
+
+  var _materialUiLibFontIcon2 = _interopRequireDefault(_materialUiLibFontIcon);
+
+  var _reactSocialButtons = __webpack_require__(7);
 
   var _default = (function (_Component) {
     _inherits(_default, _Component);
@@ -803,25 +829,28 @@ module.exports =
           _react2['default'].createElement(
             'p',
             null,
+            'PC推奨ですが､ スマホの場合は横向きにすると少し見やすくなります｡'
+          ),
+          _react2['default'].createElement(
+            'p',
+            null,
             'フィードバック､ 大学･学部追加のリクエストは',
             _react2['default'].createElement(
               'a',
               { href: 'https://twitter.com/uraway_' },
               'こちら'
             ),
-            'まで｡ もしくは #単位チェッカーリクエスト でツイート｡'
+            'まで｡ もしくは ',
+            _react2['default'].createElement(_reactSocialButtons.TwitterButton, null),
+            ' でツイートしてください｡'
           ),
-          _react2['default'].createElement(
-            'p',
-            null,
-            'コントリビューションは',
-            _react2['default'].createElement(
-              'a',
-              { href: 'https://github.com/uraway/CreditChecking' },
-              'Github'
-            ),
-            'まで｡'
-          )
+          _react2['default'].createElement(_materialUiLibFlatButton2['default'], {
+            label: 'GitHub Link',
+            linkButton: true,
+            href: 'https://github.com/uraway/CreditChecking',
+            secondary: true,
+            icon: _react2['default'].createElement(_materialUiLibFontIcon2['default'], { className: 'muidocs-icon-custom-github' })
+          })
         );
       }
     }]);
@@ -862,41 +891,112 @@ module.exports =
 
   var _react2 = _interopRequireDefault(_react);
 
-  var _materialUiLibTableTable = __webpack_require__(25);
+  var _componentsLink = __webpack_require__(3);
+
+  var _componentsLink2 = _interopRequireDefault(_componentsLink);
+
+  var _materialUiLibListsList = __webpack_require__(25);
+
+  var _materialUiLibListsList2 = _interopRequireDefault(_materialUiLibListsList);
+
+  var _materialUiLibListsListItem = __webpack_require__(26);
+
+  var _materialUiLibListsListItem2 = _interopRequireDefault(_materialUiLibListsListItem);
+
+  var _default = (function (_Component) {
+    _inherits(_default, _Component);
+
+    function _default() {
+      _classCallCheck(this, _default);
+
+      _get(Object.getPrototypeOf(_default.prototype), 'constructor', this).apply(this, arguments);
+    }
+
+    _createClass(_default, [{
+      key: 'render',
+      value: function render() {
+        return _react2['default'].createElement(
+          _materialUiLibListsList2['default'],
+          null,
+          _react2['default'].createElement(_materialUiLibListsListItem2['default'], {
+            primaryText: '神戸大学 国際文化学部',
+            href: '/uni/kokubun'
+          })
+        );
+      }
+    }]);
+
+    return _default;
+  })(_react.Component);
+
+  exports['default'] = _default;
+  module.exports = exports['default'];
+
+/***/ },
+/* 14 */
+/***/ function(module, exports, __webpack_require__) {
+
+  /**
+   * React Static Boilerplate
+   * https://github.com/koistya/react-static-boilerplate
+   * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
+   */
+
+  'use strict';
+
+  Object.defineProperty(exports, '__esModule', {
+    value: true
+  });
+
+  var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+  var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+
+  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+  function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+
+  function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+  var _react = __webpack_require__(1);
+
+  var _react2 = _interopRequireDefault(_react);
+
+  var _materialUiLibTableTable = __webpack_require__(31);
 
   var _materialUiLibTableTable2 = _interopRequireDefault(_materialUiLibTableTable);
 
-  var _materialUiLibTableTableHeaderColumn = __webpack_require__(29);
+  var _materialUiLibTableTableHeaderColumn = __webpack_require__(35);
 
   var _materialUiLibTableTableHeaderColumn2 = _interopRequireDefault(_materialUiLibTableTableHeaderColumn);
 
-  var _materialUiLibTableTableRow = __webpack_require__(30);
+  var _materialUiLibTableTableRow = __webpack_require__(36);
 
   var _materialUiLibTableTableRow2 = _interopRequireDefault(_materialUiLibTableTableRow);
 
-  var _materialUiLibTableTableHeader = __webpack_require__(28);
+  var _materialUiLibTableTableHeader = __webpack_require__(34);
 
   var _materialUiLibTableTableHeader2 = _interopRequireDefault(_materialUiLibTableTableHeader);
 
-  var _materialUiLibTableTableRowColumn = __webpack_require__(31);
+  var _materialUiLibTableTableRowColumn = __webpack_require__(37);
 
   var _materialUiLibTableTableRowColumn2 = _interopRequireDefault(_materialUiLibTableTableRowColumn);
 
-  var _materialUiLibTableTableBody = __webpack_require__(26);
+  var _materialUiLibTableTableBody = __webpack_require__(32);
 
   var _materialUiLibTableTableBody2 = _interopRequireDefault(_materialUiLibTableTableBody);
 
-  var _materialUiLibTableTableFooter = __webpack_require__(27);
+  var _materialUiLibTableTableFooter = __webpack_require__(33);
 
   var _materialUiLibTableTableFooter2 = _interopRequireDefault(_materialUiLibTableTableFooter);
 
-  var _reactSocial = __webpack_require__(6);
+  var _reactSocialButtons = __webpack_require__(7);
 
   // import table data
 
-  var _componentsTableDataKobeUniKokubunJs = __webpack_require__(9);
+  var _kokubunJs = __webpack_require__(5);
 
-  var _componentsTableDataKobeUniKokubunJs2 = _interopRequireDefault(_componentsTableDataKobeUniKokubunJs);
+  var _kokubunJs2 = _interopRequireDefault(_kokubunJs);
 
   var App = (function (_Component) {
     _inherits(App, _Component);
@@ -914,7 +1014,7 @@ module.exports =
 
         for (var i in rowNumber) {
           var value = rowNumber[i];
-          total = total + _componentsTableDataKobeUniKokubunJs2['default'][value].requiredCredits;
+          total = total + _kokubunJs2['default'][value].requiredCredits;
         }
 
         var totalCredits = document.getElementById('totalCredits');
@@ -926,6 +1026,8 @@ module.exports =
     }, {
       key: 'render',
       value: function render() {
+        var url = "https://creditchecking.firebaseapp.com";
+
         return _react2['default'].createElement(
           'div',
           null,
@@ -987,7 +1089,7 @@ module.exports =
                 deselectOnClickaway: false,
                 stripedRows: false
               },
-              _componentsTableDataKobeUniKokubunJs2['default'].map(function (row) {
+              _kokubunJs2['default'].map(function (row) {
                 return _react2['default'].createElement(
                   _materialUiLibTableTableRow2['default'],
                   { selected: row.selected },
@@ -1056,13 +1158,8 @@ module.exports =
               )
             )
           ),
-          _react2['default'].createElement(
-            _reactSocial.FacebookButton,
-            null,
-            _react2['default'].createElement(_reactSocial.FacebookCount, null),
-            'Share'
-          ),
-          _react2['default'].createElement(_reactSocial.TwitterButton, null)
+          _react2['default'].createElement(_reactSocialButtons.FacebookLikeButton, { url: url }),
+          _react2['default'].createElement(_reactSocialButtons.TwitterButton, { url: url })
         );
       }
     }]);
@@ -1074,331 +1171,7 @@ module.exports =
   module.exports = exports['default'];
 
 /***/ },
-/* 14 */
-/***/ function(module, exports, __webpack_require__) {
-
-  /**
-   * React Static Boilerplate
-   * https://github.com/koistya/react-static-boilerplate
-   * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
-   */
-
-  'use strict';
-
-  Object.defineProperty(exports, '__esModule', {
-    value: true
-  });
-
-  var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-
-  var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
-
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-  function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
-
-  function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-  var _react = __webpack_require__(1);
-
-  var _react2 = _interopRequireDefault(_react);
-
-  var _default = (function (_Component) {
-    _inherits(_default, _Component);
-
-    function _default() {
-      _classCallCheck(this, _default);
-
-      _get(Object.getPrototypeOf(_default.prototype), 'constructor', this).apply(this, arguments);
-    }
-
-    _createClass(_default, [{
-      key: 'render',
-      value: function render() {
-        return _react2['default'].createElement(
-          'div',
-          null,
-          _react2['default'].createElement(
-            'h1',
-            null,
-            'Test Article 1'
-          ),
-          _react2['default'].createElement(
-            'p',
-            null,
-            'Coming soon.'
-          )
-        );
-      }
-    }]);
-
-    return _default;
-  })(_react.Component);
-
-  exports['default'] = _default;
-  module.exports = exports['default'];
-
-/***/ },
 /* 15 */
-/***/ function(module, exports, __webpack_require__) {
-
-  /**
-   * React Static Boilerplate
-   * https://github.com/koistya/react-static-boilerplate
-   * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
-   */
-
-  'use strict';
-
-  Object.defineProperty(exports, '__esModule', {
-    value: true
-  });
-
-  var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-
-  var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
-
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-  function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
-
-  function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-  var _react = __webpack_require__(1);
-
-  var _react2 = _interopRequireDefault(_react);
-
-  var _default = (function (_Component) {
-    _inherits(_default, _Component);
-
-    function _default() {
-      _classCallCheck(this, _default);
-
-      _get(Object.getPrototypeOf(_default.prototype), 'constructor', this).apply(this, arguments);
-    }
-
-    _createClass(_default, [{
-      key: 'render',
-      value: function render() {
-        return _react2['default'].createElement(
-          'div',
-          null,
-          _react2['default'].createElement(
-            'h1',
-            null,
-            'Test Article 2'
-          ),
-          _react2['default'].createElement(
-            'p',
-            null,
-            'Coming soon.'
-          )
-        );
-      }
-    }]);
-
-    return _default;
-  })(_react.Component);
-
-  exports['default'] = _default;
-  module.exports = exports['default'];
-
-/***/ },
-/* 16 */
-/***/ function(module, exports, __webpack_require__) {
-
-  /**
-   * React Static Boilerplate
-   * https://github.com/koistya/react-static-boilerplate
-   * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
-   */
-
-  'use strict';
-
-  Object.defineProperty(exports, '__esModule', {
-    value: true
-  });
-
-  var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-
-  var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
-
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-  function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
-
-  function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-  var _react = __webpack_require__(1);
-
-  var _react2 = _interopRequireDefault(_react);
-
-  var _default = (function (_Component) {
-    _inherits(_default, _Component);
-
-    function _default() {
-      _classCallCheck(this, _default);
-
-      _get(Object.getPrototypeOf(_default.prototype), 'constructor', this).apply(this, arguments);
-    }
-
-    _createClass(_default, [{
-      key: 'render',
-      value: function render() {
-        return _react2['default'].createElement(
-          'div',
-          null,
-          _react2['default'].createElement(
-            'h1',
-            null,
-            'Test Article 1'
-          ),
-          _react2['default'].createElement(
-            'p',
-            null,
-            'Coming soon.'
-          )
-        );
-      }
-    }]);
-
-    return _default;
-  })(_react.Component);
-
-  exports['default'] = _default;
-  module.exports = exports['default'];
-
-/***/ },
-/* 17 */
-/***/ function(module, exports, __webpack_require__) {
-
-  /**
-   * React Static Boilerplate
-   * https://github.com/koistya/react-static-boilerplate
-   * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
-   */
-
-  'use strict';
-
-  Object.defineProperty(exports, '__esModule', {
-    value: true
-  });
-
-  var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-
-  var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
-
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-  function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
-
-  function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-  var _react = __webpack_require__(1);
-
-  var _react2 = _interopRequireDefault(_react);
-
-  var _default = (function (_Component) {
-    _inherits(_default, _Component);
-
-    function _default() {
-      _classCallCheck(this, _default);
-
-      _get(Object.getPrototypeOf(_default.prototype), 'constructor', this).apply(this, arguments);
-    }
-
-    _createClass(_default, [{
-      key: 'render',
-      value: function render() {
-        return _react2['default'].createElement(
-          'div',
-          null,
-          _react2['default'].createElement(
-            'h1',
-            null,
-            'Test Article 2'
-          ),
-          _react2['default'].createElement(
-            'p',
-            null,
-            'Coming soon.'
-          )
-        );
-      }
-    }]);
-
-    return _default;
-  })(_react.Component);
-
-  exports['default'] = _default;
-  module.exports = exports['default'];
-
-/***/ },
-/* 18 */
-/***/ function(module, exports, __webpack_require__) {
-
-  /**
-   * React Static Boilerplate
-   * https://github.com/koistya/react-static-boilerplate
-   * Copyright (c) Konstantin Tarkus (@koistya) | MIT license
-   */
-
-  'use strict';
-
-  Object.defineProperty(exports, '__esModule', {
-    value: true
-  });
-
-  var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-
-  var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
-
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-  function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
-
-  function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-  var _react = __webpack_require__(1);
-
-  var _react2 = _interopRequireDefault(_react);
-
-  var _componentsLink = __webpack_require__(3);
-
-  var _componentsLink2 = _interopRequireDefault(_componentsLink);
-
-  var _default = (function (_Component) {
-    _inherits(_default, _Component);
-
-    function _default() {
-      _classCallCheck(this, _default);
-
-      _get(Object.getPrototypeOf(_default.prototype), 'constructor', this).apply(this, arguments);
-    }
-
-    _createClass(_default, [{
-      key: 'render',
-      value: function render() {
-        return _react2['default'].createElement(
-          'div',
-          null,
-          _react2['default'].createElement(
-            'a',
-            { className: 'Navigation-link', href: 'blog/kobeKokubun', onClick: _componentsLink2['default'].handleClick },
-            '神戸大学 国際文化学部'
-          )
-        );
-      }
-    }]);
-
-    return _default;
-  })(_react.Component);
-
-  exports['default'] = _default;
-  module.exports = exports['default'];
-
-/***/ },
-/* 19 */
 /***/ function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(2)();
@@ -1412,7 +1185,7 @@ module.exports =
 
 
 /***/ },
-/* 20 */
+/* 16 */
 /***/ function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(2)();
@@ -1426,7 +1199,7 @@ module.exports =
 
 
 /***/ },
-/* 21 */
+/* 17 */
 /***/ function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(2)();
@@ -1440,70 +1213,136 @@ module.exports =
 
 
 /***/ },
-/* 22 */
+/* 18 */
 /***/ function(module, exports) {
 
   module.exports = require("history/lib/createBrowserHistory");
 
 /***/ },
-/* 23 */
+/* 19 */
 /***/ function(module, exports) {
 
   module.exports = require("history/lib/createMemoryHistory");
 
 /***/ },
-/* 24 */
+/* 20 */
 /***/ function(module, exports) {
 
   module.exports = require("history/lib/useQueries");
 
 /***/ },
+/* 21 */
+/***/ function(module, exports) {
+
+  module.exports = require("material-ui/lib/app-bar");
+
+/***/ },
+/* 22 */
+/***/ function(module, exports) {
+
+  module.exports = require("material-ui/lib/flat-button");
+
+/***/ },
+/* 23 */
+/***/ function(module, exports) {
+
+  module.exports = require("material-ui/lib/font-icon");
+
+/***/ },
+/* 24 */
+/***/ function(module, exports) {
+
+  module.exports = require("material-ui/lib/icon-button");
+
+/***/ },
 /* 25 */
 /***/ function(module, exports) {
 
-  module.exports = require("material-ui/lib/table/table");
+  module.exports = require("material-ui/lib/lists/list");
 
 /***/ },
 /* 26 */
 /***/ function(module, exports) {
 
-  module.exports = require("material-ui/lib/table/table-body");
+  module.exports = require("material-ui/lib/lists/list-item");
 
 /***/ },
 /* 27 */
 /***/ function(module, exports) {
 
-  module.exports = require("material-ui/lib/table/table-footer");
+  module.exports = require("material-ui/lib/menus/icon-menu");
 
 /***/ },
 /* 28 */
 /***/ function(module, exports) {
 
-  module.exports = require("material-ui/lib/table/table-header");
+  module.exports = require("material-ui/lib/menus/menu-item");
 
 /***/ },
 /* 29 */
 /***/ function(module, exports) {
 
-  module.exports = require("material-ui/lib/table/table-header-column");
+  module.exports = require("material-ui/lib/svg-icons/navigation/close");
 
 /***/ },
 /* 30 */
 /***/ function(module, exports) {
 
-  module.exports = require("material-ui/lib/table/table-row");
+  module.exports = require("material-ui/lib/svg-icons/navigation/more-vert");
 
 /***/ },
 /* 31 */
 /***/ function(module, exports) {
 
-  module.exports = require("material-ui/lib/table/table-row-column");
+  module.exports = require("material-ui/lib/table/table");
 
 /***/ },
 /* 32 */
 /***/ function(module, exports) {
 
+  module.exports = require("material-ui/lib/table/table-body");
+
+/***/ },
+/* 33 */
+/***/ function(module, exports) {
+
+  module.exports = require("material-ui/lib/table/table-footer");
+
+/***/ },
+/* 34 */
+/***/ function(module, exports) {
+
+  module.exports = require("material-ui/lib/table/table-header");
+
+/***/ },
+/* 35 */
+/***/ function(module, exports) {
+
+  module.exports = require("material-ui/lib/table/table-header-column");
+
+/***/ },
+/* 36 */
+/***/ function(module, exports) {
+
+  module.exports = require("material-ui/lib/table/table-row");
+
+/***/ },
+/* 37 */
+/***/ function(module, exports) {
+
+  module.exports = require("material-ui/lib/table/table-row-column");
+
+/***/ },
+/* 38 */
+/***/ function(module, exports) {
+
   module.exports = require("react-dom");
+
+/***/ },
+/* 39 */
+/***/ function(module, exports) {
+
+  module.exports = require("react-tap-event-plugin");
 
 /***/ }
 /******/ ]);
