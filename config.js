@@ -5,7 +5,7 @@
  */
 
 export default {
-  title: 'React Static Boilerplate',
-  description: 'Static website generator for React.js web applications.',
-  googleAnalyticsId: 'UA-XXXXX-X',
+  title: '単位チェッカー',
+  description: '忙しい大学生のための単位チェッカー',
+  googleAnalyticsId: 'UA-69293209-2',
 };

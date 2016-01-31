@@ -14,8 +14,8 @@ function Html({ title, description, body, debug }) {
       <head>
         <meta charSet="utf-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-        <title>{title || config.title}</title>
-        <meta name="description" content={description || config.description} />
+        <title>単位チェッカー</title>
+        <meta name="description" content="忙しい大学生のための単位チェッカー" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="apple-touch-icon" href="apple-touch-icon.png" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />

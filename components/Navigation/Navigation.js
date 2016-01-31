@@ -37,6 +37,7 @@ function Navigation() {
           >
             <MenuItem href="/" primaryText="Home" />
             <MenuItem href="/about" primaryText="About" />
+            <MenuItem href="http://uraway.hatenablog.com/entry/2016/01/29/213008" primaryText="Website"/>
           </IconMenu>
         }
       />
